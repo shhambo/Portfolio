@@ -7,7 +7,19 @@
 	 <link rel="stylesheet" href="./css/shared.css">
     </head>
    <body>
-
+	body { 
+		opacity: 1;
+		transition: 1s opacity: ;
+	}
+	body.fade-out {
+		opacity: 0;
+		transition: none;
+	  }
+		<script>document.body.classList.add('fadeout');
+		</script>
+		window.addEventListener'DomContentloaded',()=> {
+			document.body.classList.remove('fadeout');
+		});
 	<!--NAV-->
     <div class="wrap">
 	   <div class="menu-container">
